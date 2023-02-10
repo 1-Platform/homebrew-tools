@@ -10,7 +10,7 @@ class Apic < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/1-Platform/api-catalog/releases/download/v0.1.0/api-catalog_Darwin_arm64.tar.gz"
-      sha256 "aa5a7244f14bda4aadc54f4f7585a8a0cddc2e81a133d025913407e3e29176f6"
+      sha256 "c584f2b44d034b9bc4228fff41112e932dc2499d35514e1399241fb5ea2364c0"
 
       def install
         bin.install "apic"
@@ -21,7 +21,7 @@ class Apic < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/1-Platform/api-catalog/releases/download/v0.1.0/api-catalog_Darwin_x86_64.tar.gz"
-      sha256 "ed9f292795af88c059807c4842cab5ba0bf9cbde9733a14d5411a6a0449c32df"
+      sha256 "2aaa387476ff0216d11a362680ff13ebd64671532e67d45418241e864231221a"
 
       def install
         bin.install "apic"
@@ -35,7 +35,7 @@ class Apic < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/1-Platform/api-catalog/releases/download/v0.1.0/api-catalog_Linux_arm64.tar.gz"
-      sha256 "30fc61fd6fdd1b629113ede43c0df9b185d5d6bf08f22a4bff54d5372bfc290d"
+      sha256 "f658f00798b32c5899aaca042f052f3f87a300c42ae113047ffd899992b0d25e"
 
       def install
         bin.install "apic"
@@ -46,7 +46,7 @@ class Apic < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/1-Platform/api-catalog/releases/download/v0.1.0/api-catalog_Linux_x86_64.tar.gz"
-      sha256 "3f6492628d20b24c434fcaa907d5db7ce131f5acd61527c5164203f9e2cc4d41"
+      sha256 "d72162fd54f342cf7486373f4d22c7d9b5e8ea679b3686d523067564336d3fd6"
 
       def install
         bin.install "apic"
